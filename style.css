@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Karla', sans-serif;
+}
+
+.card{
+    width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 15px 20px 10px rgba(37,43,70, 0.1);
+    
+}
+.up{
+    padding: 40px;
+    
+}
+h2{
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 25px;
+}
+.up h3{
+    font-weight: bold;
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 16px;
+}
+.up p{
+    color: hsl(218, 22%, 67%);
+    line-height: 30px;
+}
+.sub{
+    display: flex;
+}
+.right{
+    padding: 40px;
+    background-color: hsl(179, 62%, 43%);
+    color: #fff;
+}
+.right h3{
+    padding-bottom: 20px;
+    opacity: 0.9;
+}
+.price{
+    display: inline-flex ;
+}
+.price-per{
+    padding: 8px 0px 0px 12px;
+    opacity: 0.5;
+}
+.Full_access{
+    padding: 10px 0px 20px 0px;
+    opacity: 0.8;
+}
+button{
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(71, 73%, 54%);
+}
+.left{
+    padding: 40px;
+    background-color: hsl(179, 62%, 43%);
+    opacity: 0.8;
+    color: #fff;
+    
+}
+.left h3{
+    padding-bottom: 20px;
+}
+.left p{
+    padding-bottom: 3px;
+    font-size: 16px;
+    opacity: 0.6;
+}
+@media (min-width:768px){
+    .left,.right{
+        width: 50%;
+    }
+}
+@media (max-width:768px){
+    .card{
+        width: 90%;
+        margin-top: 40px;
+    }
+    .sub{
+        display: flex;
+        flex-direction: column;
+    }
+    .up {
+        padding-right: 20px;
+    }
+    .left,.right{
+        width: 100%;
+    }
+}
